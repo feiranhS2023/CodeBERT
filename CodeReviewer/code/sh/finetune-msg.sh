@@ -26,8 +26,8 @@ python -m torch.distributed.launch --nproc_per_node ${PER_NODE_GPU} --node_rank=
   --train_epochs 30 \
   --model_name_or_path microsoft/codereviewer \
   --output_dir ../../save/gen \
-  --train_filename ../../dataset/gen-train.jsonl \
-  --dev_filename ../../dataset/gen-valid.jsonl \
+  --train_filename ../../dataset/msg-train.jsonl \
+  --dev_filename ../../dataset/msg-valid.jsonl \
   --max_source_length 512 \
   --max_target_length 128 \
   --train_batch_size 6 \

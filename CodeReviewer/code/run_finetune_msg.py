@@ -169,7 +169,7 @@ def main(args):
     train_file = args.train_filename
     valid_file = args.dev_filename
     if os.path.isdir(train_file):
-        train_files = [file for file in os.listdir(train_file) if file.startswith("train") and file.endswith(".jsonl")]
+        train_files = [file for file in os.listdir(train_file) if file.startswith("msg") and file.endswith(".jsonl")]
     else:
         train_files = [train_file]
     random.seed(args.seed)
